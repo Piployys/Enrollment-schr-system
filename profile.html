@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<!--<![endif]-->
+	<!-- start: HEAD -->
+	<head>
+		<title> Division of Student Development Affairs</title>
+		<link rel= "shortcut icon" href = "assets/images/mfumini.png" type="image/png">
+		<!-- start: META -->
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- end: META -->
+		<!-- start: GOOGLE FONTS -->
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+		<!-- end: GOOGLE FONTS -->
+		<!-- start: MAIN CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/themify-icons/themify-icons.min.css">
+		<link href="vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+		<!-- end: MAIN CSS -->
+		<!-- start: CLIP-TWO CSS -->
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets2/css/plugins.css">
+		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+		<!-- end: CLIP-TWO CSS -->
+		<!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+		<link href="vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/select2/select2.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/bootstrap-datepicker/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" media="screen">
+		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+
+	</head>
+	<!-- end: HEAD -->
+	<body>
+		<div id="app">
+			<!-- sidebar -->
+			<div class="sidebar app-aside" id="sidebar">
+				<div class="sidebar-container perfect-scrollbar">
+					<nav>
+					<!-- start: MAIN NAVIGATION MENU -->
+						
+						<ul class="main-navigation-menu">
+							
+							<li>
+								<a href="index-admin.html">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="ti-home"></i> 
+										</div>
+										<div class="item-inner">
+											<span class="title"> หน้าแรก </span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="AddSchr.html">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="ti-pencil"></i> 
+										</div>
+										<div class="item-inner">
+											<span class="title"> บันทึกข้อมูลเกี่ยวกับทุนการศึกษา </span>
+										</div>
+									</div>
+								</a>
+							</li>
+								<li>
+								<a href="listAnnounce.html">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="ti-pencil-alt"></i> 
+										</div>
+										<div class="item-inner">
+											<span class="title"> บันทึกประกาศทุนการศึกษา</span>
+										</div>
+									</div>
+								</a>
+							</li>
+								<li>
+								<a href="requireEnroll.html">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="ti-receipt"></i> 
+										</div>
+										<div class="item-inner">
+											<span class="title"> คำร้องขอทุนการศึกษา</span>
+										</div>
+									</div>
+								</a>
+							</li>
+								<li>
+								<a href="announceInterview.html">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-print"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> พิมพ์รายชื่อผู้มีสิทธิ์สัมภาษณ์ </span>
+										</div>
+									</div>
+								</a>
+							</li>
+								<li>
+								<a href="announceReceive.html">
+									<div class="item-content">
+										<div class="item-media">
+											<i class="fa fa-print"></i>
+										</div>
+										<div class="item-inner">
+											<span class="title"> พิมพ์รายชื่อผู้ที่ได้รับทุนการศึกษา </span>
+										</div>
+									</div>
+								</a>
+							</li>
+						
+							<li>
+								<a href="table_summary.html">
+									<div class="item-content">
+										<div class="item-media">
+											<span class="fa-stack"><i class="ti-blackboard"></i></span>
+										</div>
+										<div class="item-inner">
+											<span class="title">รายงานสรุปทุนการศึกษา</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<!-- end: MAIN NAVIGATION MENU -->
+					</nav>
+				</div>
+			</div>
+			<!-- / sidebar -->
+			<div class="app-content">
+				<!-- start: TOP NAVBAR -->
+				<header class="navbar navbar-default navbar-static-top">
+					<!-- start: NAVBAR HEADER -->
+					<div class="navbar-header"><a class="navbar-brand" href="#">
+						<img src="assets/images/logo.png" />
+					</a>
+			
+					</div>
+				  <!-- end: NAVBAR HEADER -->
+					<!-- start: NAVBAR COLLAPSE -->
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-right">
+							
+							
+							
+							<!-- start: USER OPTIONS DROPDOWN -->
+							<li class="dropdown current-user">
+								<a href class="dropdown-toggle" data-toggle="dropdown">
+									<img src="assets/images/avatar-1.jpg" > <span class="username">Officer <i class="ti-angle-down"></i></i></span>
+								</a>
+								<ul class="dropdown-menu dropdown-dark">
+									
+									<li>
+										<a href="login_signin.html">
+										 ออกจากระบบ
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- end: USER OPTIONS DROPDOWN -->
+						</ul>
+						
+				  </div>
+					
+				  <!-- end: NAVBAR COLLAPSE -->
+				</header>
+				<!-- end: TOP NAVBAR -->
+				<div class="main-content" >
+					<div class="wrap-content container" id="container">
+						<!-- start: DASHBOARD TITLE -->
+						<section id="page-title" class="padding-top-15 padding-bottom-15">
+							<div class="row">
+								<div class="col-sm-7">
+									<h2 class="mainTitle">ฝ่ายทุนการศึกษา มหาวิทยาลัยแม่ฟ้าหลวง</h2>
+									
+                                    <hr>
+								</div>
+								
+							</div>
+						</section>
+						<!-- end: DASHBOARD TITLE -->
+						<!-- start: USER PROFILE -->
+						<div class="container-fluid container-fullw bg-white">
+							<div class="row">
+								<div class="col-md-12">
+								
+									<div class="col-sm-4 col-md-4">
+														<div class="panel panel-white">
+															<div class="panel-heading">
+																<h4 class="panel-title">ข้อมูลนักศึกษา</h4>
+															</div>
+															<div class="panel-body">
+																<table class="table">
+																
+																<tbody>
+																											
+																		<td>
+																		<i class="ti-user"></i> 5731305083 -  นางสาว เสาวรส สังข์วิสิทธิ์</td>
+																		
+																	</tr>
+																	<tr>
+																		
+																		<td>
+																		<i class="ti-angle-right"></i> สำนักวิชา เทคโนโลยีสารสนเทศ</td>
+																		
+																	</tr>
+																	
+																	
+																	
+																</tbody>
+															</table>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-5 col-md-4">
+													<div class="panel panel-white">
+															<div class="panel-heading">
+																<h4 class="panel-title">สรุปผลตรวจเอกสาร</h4>
+															</div>
+															<div class="panel-body">
+																<table width="200">
+																<tbody>
+															
+																	<tr>
+																	<td><div class="checkbox clip-check check-primary checkbox-inline">
+														<input type="checkbox" id="checkbox4" value="1" checked="">
+														<label for="checkbox4">
+															เอกสารไม่มีปัญหา
+														</label>
+													</div>
+
+</td>
+																																			
+																		
+																	</tr>
+																	<tr>
+																	<td>	<div class="checkbox clip-check check-primary">
+														<input type="checkbox" id="checkbox7" value="1">
+														<label for="checkbox7">
+															เอกสารมีปัญหา
+														</label>
+													</div>
+</td>
+																	
+																		
+																	</tr>
+																
+																</tbody>
+																	
+
+															</table>
+															</div>
+														</div>
+													</div>
+									<!-- start: CONDENSED TABLE -->
+						<div class="container-fluid container-fullw bg-white">
+							<div class="row">
+								<div class="col-md-12">
+									
+									<table class="table">
+										<thead>
+											<tr>
+												<th class="hidden-xs">เอกสาร</th>
+												<th  class="hidden-xs">ปัญหา</th>
+												<th class="hidden-xs">ชื่อเอกสาร</th>
+												<th class="hidden-xs">หมายเหตุ</th>
+											</tr>
+										</thead>
+										<tbody>
+                               <tr>
+																			<td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+                                                                                <td align="center">
+                                                                                    <input type="checkbox" id="checkbox1" value="1">
+
+                                                                                </td>
+                                                                                <td width="642"><label for="checkbox1">
+															1. แบบคำขอทุนการศึกษา
+														</label></td>
+                                                                                <td width="202"><input type="text" class="form-control"></td>
+                                                                               
+                                                                            </tr>
+                                                                            <tr>
+																			<td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+                                                                                <td align="center">
+                                                                                    <input type="checkbox" id="checkbox2" value="1">
+
+                                                                                </td>
+                                                                                <td><label for="checkbox2">
+															2. แผนผังที่อยู่อาศัยตามทะเบียนบ้านของผู้ขอรับทุนการศึกษา(นักศึกษา)
+														</label></td>
+                                                                                <td><input type="text" class="form-control" /></td>
+                                                                              
+                                                                            </tr>
+                                                                            <tr>
+																			<td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+                                                                                <td align="center">
+                                                                                    <input type="checkbox" id="checkbox3" value="1">
+
+                                                                                </td>
+                                                                                <td><label for="checkbox3">
+															3. ภาพถ่ายบ้านผู้ขอทุนการศึกษา(นักศึกษา)มหาวิทยาลัยแม่ฟ้าหลวง
+														</label></td>
+                                                                                <td><input type="text" class="form-control" /></td>
+                                                                               
+                                                                            </tr>
+                                                                            <tr>
+																			<td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+                                                                                <td align="center">
+                                                                                    <input type="checkbox" id="checkbox4" value="1">
+
+                                                                                </td>
+                                                                                <td><label for="checkbox4">
+															4. ความจำเป็นในการขอรับทุนการศึกษา มหาวิทยาลัยแม่ฟ้าหลวง
+														</label></td>
+                                                                                <td><input type="text" class="form-control" /></td>
+                                                                             
+                                                                            </tr>
+                                                                            <tr>
+																			<td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+                                                                                <td align="center">
+                                                                                    <input type="checkbox" id="checkbox5" value="1">
+
+                                                                                </td>
+                                                                                <td><label for="checkbox5">
+															5. หนังสือแสดงความคิดเห็นของอาจารย์ที่ปรึกษา
+														</label></td>
+                                                                                <td><input type="text" class="form-control" /></td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+																			<td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+                                                                                <td align="center" valign="top">
+                                                                                    <input type="checkbox" id="checkbox6" value="1">
+
+                                                                                </td>
+                                                                                <td ><label for="checkbox6">
+															6. หนังสือรับรองรายได้ของครอบครัว หรือหนังสือรับรองเงินเดือน ของบิดา/มารดา หรือผู้ปกครอง/ผู้อุปการะ
+                                                           
+														</label></td>
+                                                                                <td valign="top"><input type="text" class="form-control" /></td>
+                                                                               
+                                                                            </tr>
+                                                                            <tr>
+																			<td align="center"></td>
+                                                                                <td align="center">&nbsp;</td>
+                                                                                <td colspan="2">6.1 กรณีบิดา/มารดา หรือปกครอง ประกอบอาชีพ รับราชการ/บริษัทห้างร้าน/รัฐวิสาหกิจ หรือธนาคารต้องใช้<u>หนังสือรับรองเงินเดือนที่ออกให้โดยต้นสังกัดและหนังสือรับรองรายได้ครอบครัว(ตามที่แนบในใบสมัครนี้)</u></td>
+                                                                            </tr>
+                                                                            <tr>
+																			 <td align="center"></td>
+                                                                                <td align="center">&nbsp;</td>
+                                                                                <td colspan="2">6.2 กรณีบิดา/มารดา หรือปกครอง ประกอบอาชีพอิสระ เช่น ทำนา ทำไร่ หรือค้าขาย ขอให้ใช้แบบฟอร์มต้องใช้<u>หนังสือรับรองรายได้ของครอบครัว(ตามที่แนบในใบสมัครนี้)</td>
+                                                                            </tr>
+  
+  <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center" valign="top"><input type="checkbox" id="checkbox13" value="1"></td>
+    <td><label for="checkbox13">
+      7. สำเนาบัตรประจำตัวข้าราชการผู้รับรองภาพถ่ายบ้านและผู้รับรองรายได้ กรณีใช้แบบฟอร์มหนังสือรับรองรายได้ของครอบครัว                                                     
+      </label></td>
+    <td valign="top"><input type="text" class="form-control" /></td>
+    
+  </tr>
+  <tr>
+   <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center"><input type="checkbox" id="checkbox14" value="1"></td>
+    <td><label for="checkbox14">
+															8. สำเนาบัตรประจำตัวประชาชนและสำเนาทะเบียนบ้านของนักศึกษา (ถ่ายให้อยู่หน้าเเดียวกัน) 
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+   
+  </tr>
+  <tr>
+   <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center"><input type="checkbox" id="checkbox15" value="1"></td>
+    <td><label for="checkbox15">
+															9. สำเนาบัตรประจำตัวประชาชนและสำเนาทะเบียนบ้านของบิดา (ถ่ายให้อยู่ในหน้าเดียวกัน)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+  
+  </tr>
+   <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															10. สำเนาบัตรประจำตัวประชาชนและสำเนาทะเบียนบ้านของมารดา (ถ่ายให้อยู่ในหน้าเดียวกัน)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+  
+  </tr>
+    <tr>
+	 <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center" valign="top"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															11. สำเนาบัตรประจำตัวประชาชนและสำเนาทะเบียนบ้านของผู้ปกครอง (กรณีไม่มีบิดาและมารดา) (ถ่ายให้อยู่ในหน้าเดียวกัน)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+   
+  </tr>
+   <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center" valign="top"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															12. สำเนาใบมรณบัตรของบิดา/มารดา (กรณีบิดา/มารดาเสียชีวิต),สำเนาทะเบียนสมรส,สำเนาทะเบียนหย่า, (กรณีบิดา/มารดาหย่าร้าง)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+  
+  </tr>
+   <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center" valign="top"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															13.หนังสือรับรองสถานภาพครอบครัว (กรณีบิดา/มารดาแยกทางกันโดยไม่ได้จดทะเบียนสมรส/ขาดการติดต่อ)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+  
+  </tr>
+   <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center" valign="top"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															14.หนังสือรับรองความเป็นผู้อุปการะที่มิใช่บิดา/มารดา (กรณีนักศึกษาอยู่ในความอุปการะของบุคคลอื่นที่มิใช่บิดามารดา)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+   
+  </tr>
+   <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center" valign="top"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															15.ใบแสดงผลการเรียน (นักศึกษาเก่าพิมพ์จากระบบ reg.mfu.ac.th/ นักศึกษาใหม่ใช้สำเนาใบ ร.บ.)
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+ 
+  </tr>
+  <tr>
+   <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															16.ระเบียนประวัตินักศึกษา
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+ 
+  </tr>
+  <tr>
+   <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															17.เอกสารแสดงภาระหนี้สิน
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+    
+  </tr>
+   <tr>
+    <td align="center"><a href="javascript:void(0)" data-placement="top" data-toggle="tooltip" data-original-title="ดูข้อมูล"><i class="fa fa-file-text-o"></i></a></td>
+    <td align="center"><input type="checkbox" id="checkbox16" value="1"></td>
+    <td><label for="checkbox16">
+															18.เอกสารที่แสดงถึงความเจ็บป่วยของบิดา มารดาหรือผู้ปกครอง
+                                                           
+			</label></td>
+    <td><input type="text" class="form-control" /></td>
+   
+  </tr>
+  </tbody>
+									</table>
+								     <table width="1000"><p align="center"><button type="submit" class="btn btn-green" >บันทึก</button></p>
+</table>
+							  </div>
+								
+							</div>
+						</div>
+						<!-- end: CONDENSED TABLE -->
+
+
+									
+									
+								</div>
+							</div>
+						</div>
+						<!-- end: USER PROFILE -->
+					</div>
+				</div>
+			</div>
+			<!-- start: FOOTER -->
+			<footer>
+				<div class="footer-inner">
+					<div class="pull-left">
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> DIVISION OF STUDENT DEVELOPMENT AFFAIRS</span>. 
+					</div>
+					
+				</div>
+			</footer>
+			<!-- end: FOOTER -->
+			
+		</div>
+		<!-- start: MAIN JAVASCRIPTS -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/modernizr/modernizr.js"></script>
+		<script src="vendor/jquery-cookie/jquery.cookie.js"></script>
+		<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script src="vendor/switchery/switchery.min.js"></script>
+		<!-- end: MAIN JAVASCRIPTS -->
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="vendor/maskedinput/jquery.maskedinput.min.js"></script>
+		<script src="vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+		<script src="vendor/autosize/autosize.min.js"></script>
+		<script src="vendor/selectFx/classie.js"></script>
+		<script src="vendor/selectFx/selectFx.js"></script>
+		<script src="vendor/select2/select2.min.js"></script>
+		<script src="vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+		<script src="vendor/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<!-- start: CLIP-TWO JAVASCRIPTS -->
+		<script src="assets/js/main.js"></script>
+		<!-- start: JavaScript Event Handlers for this page -->
+		<script src="assets/js/form-elements.js"></script>
+		<script>
+			jQuery(document).ready(function() {
+				Main.init();
+				FormElements.init();
+			});
+		</script>
+		<!-- end: JavaScript Event Handlers for this page -->
+		<!-- end: CLIP-TWO JAVASCRIPTS -->
+	</body>
+</html>
+
