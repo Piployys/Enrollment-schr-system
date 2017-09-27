@@ -48,7 +48,7 @@
 									<a href="index-student">หน้าแรก</a>
 								</li>
                                 <li>
-									<a href="Home.html">ออกจากระบบ</a>
+									<a href="index-pj.html">ออกจากระบบ</a>
 								</li>
 								
 								
@@ -87,12 +87,7 @@
 												<a href="manageScrolaship.html">จัดการเกี่ยวกับทุนการศึกษา</a>
 											</li>
 											<li>
-												<a href="checkPaper.html">พิมพ์เอกสาร</a>
-											</li>
-											<li>
-												<a href="problem.html"> เอกสารมีปัญหา
-																	
-												</a>
+												<a href="checkPaper.html">พิมพ์หนังสือเพิ่มเติม</a>
 											</li>
 										</ul>
 										<hr>
@@ -103,61 +98,85 @@
 					
 						<div class="col-md-9">
 						
-						<h3 data-appears-class="fadeInDown" data-appears-delay="300">ข้อมูลส่วนตัว</h3>
+						<h3 data-appears-class="fadeInDown" data-appears-delay="300">แก้ไขข้อมูลส่วนตัว</h3>
 						<div class="post-meta text-light">
 														<span><i class="fa fa-folder-open"></i> 5731305055</span>
-                                                        
-                                               
-														<span><i class="fa fa-edit"></i><a href="editProfile.html"> แก้ไขข้อมูลส่วนตัว</a> </span>
-														
-														
+                                                     
 													</div>
 						<hr>
 	<div class="panel panel-white min-height-200">
 																							
 												<div class="panel-body">
 													
-					    <table width="841" border="0">
+					    <form action="profile.html">
+					      <table width="841" border="0">
 					                              <tr>
 					                                <td width="33" height="36">ชื่อ </td>
-					                                <td width="103" height="36">นางสาว</td>
-					                                <td width="170" >พิมลวัลย์</td>
+					                                <td width="103" height="36">
+													<input type="text" class="form-control" placeholder="นางสาว" disabled/>
+													
+													
+                                                    </td>
+					                                <td width="170" ><input type="text" class="form-control" placeholder="พิมลวัลย์"/></td>
 					                                <td width="116">นามสกุล</td>
-					                                <td width="167">พงศ์พิมล</td>
+					                                <td width="167"><input type="text" class="form-control" placeholder="พงศ์พิมล"/></td>
 					                                <td width="86" align="left">&nbsp;</td>
 					                                <td width="136">&nbsp;</td>
 				                                  </tr>
 					                              <tr>
 					                                <td>&nbsp;</td>
 					                                <td>รหัสบัตรประชาชน</td>
-					                                <td width="170">1409901401902</td>
+					                                <td><input type="text" class="form-control" placeholder="1409901410902" disabled/></td>
 					                                <td>วัน/เดือน/ปี เกิด</td>
-					                                <td>13/04/2539</td>
+					                                <td><input type="text" class="form-control" placeholder="13/04/2539" disabled/></td>
 					                                <td>&nbsp;</td>
 					                                <td>&nbsp;</td>
 				                                  </tr>
 					                              <tr>
 					                                <td>&nbsp;</td>
 					                                <td>รหัสนักศึกษา</td>
-					                                <td width="170">5731305055</td>
+					                                <td><input type="text" class="form-control" placeholder="5731305055" disabled/></td>
 					                                <td>สำนักวิชา</td>
-					                                <td>เทคโนโลยีสารสนเทศ</td>
-					                                <td>สาขาวิชา</td>
-					                                <td>ซอฟต์แวร์เอ็นจิเนียริ่ง</td>
+					                                <td><input type="text" class="form-control" placeholder="เทคโนโลยีสารสนเทศ" disabled/></td>
                             </tr>
 					                              <tr>
 					                                <td>&nbsp;</td>
-					                                <td>Email</td>
-					                                <td width="170">Pimonwan.ploy@gmail.com</td>
+					                                <td>อีเมล</td>
+					                                <td><input type="email" class="form-control" placeholder="pimonwan.ploy@gmail.com"/></td>
+					                                <td>&nbsp;</td>
+					                                <td>&nbsp;</td>
+					                                <td>&nbsp;</td>
+					                                <td>&nbsp;</td>
+                            </tr>
+					                              <tr>
+					                                <td>&nbsp;</td>
 					                                <td>รหัสผ่านผู้ใช้</td>
-					                                <td>**************</td>
+					                                <td><input type="password" class="form-control" /></td>
+					                                <td>ยืนยันรหัสผ่าน</td>
+					                                <td><input type="password" class="form-control" /></td>
 					                                <td>&nbsp;</td>
 					                                <td>&nbsp;</td>
                             </tr>
 
 
 
-</table>		      
+</table>
+					      
+					      <br>
+					        <br>
+					        
+					      <table width="700">  <tr>
+					                                <td>&nbsp;</td>
+					                                <td></td>
+					                                <td colspan="2" align="right"><input type="submit" value="ยกเลิก" class="btn btn-wide btn-primary">&nbsp;&nbsp;</td>
+					                                <td colspan="2" align="left"><input type="submit" value="บันทึก" class="btn btn-wide btn-primary"></td>
+					                                <td>&nbsp;</td>
+					                                <td>&nbsp;</td>
+  </tr></table>
+
+
+
+</form>
 					      <p><br>
 					        <br>
 					        </p>
@@ -189,12 +208,12 @@
 										&copy; Copyright <span class="current-year"></span> Division of Student Development Affairs
 									</p>
 								</div>
-						
+							
 							</div>
 					</div>
 				  </div>
 		    </footer>
-	
+			  <a id="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
 			  <!-- end: FOOTER -->
 		  </div>
 			<!-- end: APP CONTENT -->

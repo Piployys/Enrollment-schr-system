@@ -44,14 +44,16 @@
 						<!-- start: NAVBAR -->
 						<div class="navbar-collapse collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li >
-									<a href="index-student.html">หน้าแรก</a>
+								<li class="active">
+									<a href="Home.html">หน้าแรก</a>
 								</li>
                                 <li>
-									<a href="Home.html">ออกจากระบบ</a>
+									<a href="Register.html">สมัครสมาชิก</a>
 								</li>
-								
-								
+								 <li>
+									<a href="login.html">เข้าสู่ระบบ</a>
+								</li>
+
 							</ul>
 							
 					  </div>
@@ -71,29 +73,15 @@
 							<div class="row">
 							<div class="col-md-3">
 									<aside class="sidebar">
-									
-										<ul class="nav nav-list blog-categories">
+									<ul class="nav nav-list blog-categories">
 											<li>
-												<a href="listAnnounce.html">ประกาศทุนการศึกษา</a>
+												<a href="Home.html">ประกาศทุนการศึกษา</a>
 											</li>
-											<li><a href="announceInterview.html">ประกาศรายชื่อผู้มีสิทธิ์สัมภาษณ์</a></li>
+											<li><a href="interview.html">ประกาศรายชื่อผู้มีสิทธิ์สัมภาษณ์</a></li>
 											<li>
-												<a href="listScrolaship.html">ประกาศรายชื่อผู้มีสิทธิ์ได้ทุน</a>
+												<a href="receive.html">ประกาศรายชื่อผู้มีสิทธิ์ได้ทุน</a>
 											</li>
-											<li>
-												<a href="profile.html">จัดการข้อมูลส่วนตัว</a>
-												</li>
-											<li>
-												<a href="manageScrolaship.html">จัดการเกี่ยวกับทุนการศึกษา</a>
-											</li>
-											<li>
-												<a href="checkPaper.html">พิมพ์เอกสาร</a>
-											</li>
-											<li>
-												<a href="problem.html"> เอกสารมีปัญหา
-																	
-												</a>
-											</li>
+											
 										</ul>
 										<hr>
 										
@@ -101,46 +89,76 @@
 								</div>
 								<div class="col-md-9">
 								<h3 data-appears-class="fadeInDown" data-appears-delay="300">รายชื่อผู้มีสิทธิ์สัมภาษณ์</h3>
+								<h5>ชื่อทุนการศึกษาที่ 1</h5>
 									<hr>
 
 									<div class="blog-posts">
 										<!-- start: DYNAMIC TABLE -->
 							
-									<table class="table table-striped table-bordered table-hover table-full-width" id="sample_1">
+									<table class="table table-striped table-bordered table-hover table-full-width">
 										<thead>
 											<tr>
-											<th>ลำดับ</th>
-												<th>หัวข้อทุนการศึกษา</th>
-												<th >วันที่ประกาศ</th>
+												<th>ลำดับ</th>
+												<th>รหัสนักศึกษา</th>
+												<th class="hidden-xs">ชื่อ - นามสกุล</th>
+												<th>สำนักวิชา</th>
+												<th>สาขาวิชา</th>
+												<th>สถานะ</th>
+												
 												
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-											<td>1</td>
-												<td><a href="tableInterview.html">รับสมัครทุนการศึกษามหาวิทยาลัยแม่ฟ้าหลวงประจำปีการศึกษา 2559  - ครั้งที่2</a></td>
-												<td>22/03/2559</td>
-										 
-											</tr>
-                                            	<tr>
-												<td>2</td>
-												<td><a href="tableInterview.html">รับสมัครทุนการศึกษามหาวิทยาลัยแม่ฟ้าหลวงประจำปีการศึกษา 2559  - ครั้งที่1 </a></td>
-												<td >22/03/2559</td>
-										  
-											</tr>
-                                            	<tr>
-												<td>3</td>
-												<td><a href="tableInterview.html">รับสมัครทุนการศึกษามหาวิทยาลัยแม่ฟ้าหลวงประจำปีการศึกษา 2558  - ครั้งที่2</a></td>
-												<td>06/10/2558</td>
+												<td>1</td>
+												<td>5731305055</td>
+												<td class="hidden-xs"> นางสาว พิมลวัลย์  พงศ์พิมล
 											
+												
+												</td>
+												<td>เทคโนโลยีสารสนเทศ</td>
+												<td>วิศวกรรมซอฟต์แวร์</td>
+												<td align="center"><span class="label label-sm label-success">มีสิทธิ์สัมภาษณ์</span></td>
 											</tr>
 											<tr>
-											<td>4</td>
-												<td><a href="tableInterview.html">รับสมัครทุนการศึกษามหาวิทยาลัยแม่ฟ้าหลวงประจำปีการศึกษา 2558  - ครั้งที่1 </a></td>
-												<td>06/10/2558</td>
+												<td>2</td>
+												<td>5731305083</td>
+												<td class="hidden-xs">
+											นางสาว เสาวรส สังข์วิสิทธิ์
 												
-                                              
+												</td>
+											<td>เทคโนโลยีสารสนเทศ</td>
+												<td>วิศวกรรมซอฟต์แวร์</td>
+												<td align="center"><span class="label label-sm label-success">มีสิทธิ์สัมภาษณ์</span></td>
+												
 											</tr>
+											<tr>
+												<td>3</td>
+												
+												<td>5731305077</td>
+												<td class="hidden-xs">
+											นางสาว สุดารัตน์ ยกศิริ
+												
+												</td>
+											<td>เทคโนโลยีสารสนเทศ</td>
+												<td>วิศวกรรมซอฟต์แวร์</td>
+												<td align="center"><span class="label label-sm label-danger">ไม่มีสิทธิ์สัมภาษณ์</span></td>
+												
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>5731305109</td>
+											<td class="hidden-xs">
+											นาย นพรัตน์ อินตะนำ
+												
+												</td>
+											<td>เทคโนโลยีสารสนเทศ</td>
+												<td>วิศวกรรมซอฟต์แวร์</td>
+												<td align="center"><span class="label label-sm label-danger">ไม่มีสิทธิ์สัมภาษณ์</span></td>
+												
+											</tr>
+									
+											
 										</tbody>
 									</table>
 								
